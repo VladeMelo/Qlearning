@@ -39,7 +39,7 @@ def get_next_action(platform, direction):
 
 for episode in range(TRAINING_TIMES):
     platform = 0 # plataforma atual
-    direction = '00' #norte
+    direction = '00' # direção atual
 
     is_finish = False # para checar quando o Amongois chega no objetivo
 
@@ -67,6 +67,6 @@ for episode in range(TRAINING_TIMES):
 
         save_table()
 
-    print('Finish Episode')
+    print('Finish Episode') # relata a finalização de um episódio de treino
 
-print('Training complete!')
+print('Training complete!') # relata a finalização de todos os episódios de treino, ou seja, do treinamento em si
