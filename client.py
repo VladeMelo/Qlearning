@@ -16,7 +16,7 @@ EPSILON = 0.8 # porcentagem de vezes que devemos executar a melhor ação
 DISCOUNT_FACTOR = 0.95 # determina a importância que daremos aos rewards de longo prazo
 LEARNING_RATE = 0.7 # taxa na qual o modelo deve aprender
 
-TRAINING_TIMES = 5
+TRAINING_TIMES = 5 # número de vezes que vai treinar o Amongois a chegar até o objetivo
 
 # carrega a tabela
 def load_table():
@@ -67,6 +67,6 @@ for episode in range(TRAINING_TIMES):
 
         save_table()
 
-    print('Finish')
+    print('Finish Episode')
 
 print('Training complete!')
